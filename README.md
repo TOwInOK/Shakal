@@ -11,6 +11,16 @@
   - Ультра-Шакал (10%)
 - **WebP → PNG** — lossless конвертация
 
+## Демонстрация
+
+### PNG → WebP
+
+![PNG to WebP](.github/content/png_to_webp.webp)
+
+### WebP → PNG
+
+![WebP to PNG](.github/content/webp_to_png.webp)
+
 ## Требования
 
 - Windows 10
