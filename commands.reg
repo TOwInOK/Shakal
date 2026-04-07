@@ -1,0 +1,19 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CURRENT_USER\Software\Classes\SystemFileAssociations\.png\shell\ConvertToWebP]
+"SubCommands"=""
+
+[HKEY_CURRENT_USER\Software\Classes\SystemFileAssociations\.png\shell\ConvertToWebP\shell\01_q95\command]
+@="powershell.exe -NoProfile -WindowStyle Hidden -Command \"$f='%1'; $o=[IO.Path]::ChangeExtension($f,'.webp'); ffmpeg -y -hide_banner -loglevel error -i $f -quality 95 $o\""
+
+[HKEY_CURRENT_USER\Software\Classes\SystemFileAssociations\.png\shell\ConvertToWebP\shell\02_q80\command]
+@="powershell.exe -NoProfile -WindowStyle Hidden -Command \"$f='%1'; $o=[IO.Path]::ChangeExtension($f,'.webp'); ffmpeg -y -hide_banner -loglevel error -i $f -quality 80 $o\""
+
+[HKEY_CURRENT_USER\Software\Classes\SystemFileAssociations\.png\shell\ConvertToWebP\shell\03_q50\command]
+@="powershell.exe -NoProfile -WindowStyle Hidden -Command \"$f='%1'; $o=[IO.Path]::ChangeExtension($f,'.webp'); ffmpeg -y -hide_banner -loglevel error -i $f -quality 50 $o\""
+
+[HKEY_CURRENT_USER\Software\Classes\SystemFileAssociations\.png\shell\ConvertToWebP\shell\04_q10\command]
+@="powershell.exe -NoProfile -WindowStyle Hidden -Command \"$f='%1'; $o=[IO.Path]::ChangeExtension($f,'.webp'); ffmpeg -y -hide_banner -loglevel error -i $f -quality 10 $o\""
+
+[HKEY_CURRENT_USER\Software\Classes\SystemFileAssociations\.webp\shell\ConvertToPNG\command]
+@="powershell.exe -NoProfile -WindowStyle Hidden -Command \"$f='%1'; $o=[IO.Path]::ChangeExtension($f,'.png'); ffmpeg -y -hide_banner -loglevel error -i $f $o\""
